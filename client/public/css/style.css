@@ -1,0 +1,84 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.bg-dark{
+  background-image: url("../images/blackbg.jpg");
+}
+button{
+  color: white;
+}
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 15rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  /* background-color: #343a40; */
+  background-image: url("../images/whitebg.jpg");
+  color: white;
+}
+
+.page-wrap {
+  margin: 0 auto;
+}
+h2{
+  color:#343a40;
+}
+/**
+ * Footer Styles
+ */
+
+footer{
+ background-image: url(https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/3326042/580/333/m1/fpnw/wm0/40-black-wood-background-textures-24-.jpg?1506571975&s=77f0119ea5e4971a126e86800ffe1a2f);
+ right: 0;
+ bottom: 0;
+ left:0;
+ padding: 1rem;
+ background: solid;
+ position: absolute;
+ width: 100%;
+ z-index: 1;
+ border-top: solid 1px;
+}
+footer h4{
+  font-size: 15px;
+}
+footer p, footer li{
+  font-size: 10px;
+}
+.footerlogo{
+  text-align: center;
+  line-height: 10px;
+
+}
+.card{
+  color:#343a40;
+}
+input, textarea{
+  width: 100%;
+}
+textarea{
+  min-height: 200px;
+}
+.cardrow{
+  margin-bottom: 20px;
+}
+.col-md-6{
+  display: inline-grid;
+}
+/*
+@media (min-width: 700px) {
+    .col-md-6 {
+        max-width: 100% !important;
+    }
+    .col-md-3{
+      max-width: 50% !important;
+    }
+} */
