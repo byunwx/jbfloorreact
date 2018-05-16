@@ -17,14 +17,16 @@ button{
 body {
   position: relative;
   margin: 0;
-  padding-bottom: 15rem;
+  padding-bottom: 20rem;
   min-height: 100%;
   font-family: "Helvetica Neue", Arial, sans-serif;
   /* background-color: #343a40; */
   background-image: url("../images/whitebg.jpg");
   color: white;
 }
-
+.black{
+  color: black;
+}
 .page-wrap {
   margin: 0 auto;
 }

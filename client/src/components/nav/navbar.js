@@ -5,7 +5,7 @@ const navbar = () => (
   <Navbar inverse collapseOnSelect>
     <Navbar.Header>
       <Navbar.Brand>
-        <a href="#brand">JBFloor Inc</a>
+        <a href="/">JBFloor Inc</a>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>
@@ -22,11 +22,11 @@ const navbar = () => (
         </NavItem>
       </Nav>
       <Nav pullRight>
-        <NavItem eventKey={1} href="#">
-          Link Right
+        <NavItem eventKey={1} href="/floor">
+          Floor
         </NavItem>
-        <NavItem eventKey={2} href="#">
-          Link Right
+        <NavItem eventKey={2} href="/contact">
+          Contact
         </NavItem>
       </Nav>
     </Navbar.Collapse>

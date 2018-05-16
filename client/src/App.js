@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import logo from './logo.svg';
-import './App.css';
+
 import Home from './pages/home';
-import Navbar from './components/nav'
+import About from './pages/about';
+import Contact from './pages/contact';
+import Floor from './pages/floor';
+
+import Navbar from './components/nav';
+import Footer from './components/footer';
+import Caro from './components/carousel';
 
 class App extends Component {
   render() {
@@ -12,11 +17,14 @@ class App extends Component {
         <Router>
           <div>
             <Navbar />
-            <logo />
+            <Caro />
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route exact path="/about" component={Home} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/floor" component={Floor} />
             </Switch>
+            <Footer />
           </div>
         </Router>
       </div>

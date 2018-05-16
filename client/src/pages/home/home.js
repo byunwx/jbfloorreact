@@ -1,101 +1,85 @@
+import { Grid, Row, Col, Jumbotron, Thumbnail, Button, Image } from "react-bootstrap";
 import React from 'react'
 
 const home = () => {
   return (
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+    <Grid>
+      <Row>
+        <Col md={12}>
           <h2>Our Services</h2>
-        </div>
-      </div>
+        </Col>
+      </Row>
 
-      <div class="row">
-        <div class="col-md-6 cardrow">
-          <div class="card" >
-            <img class="card-img-top" src="./images/woodfloor.jpg" alt="Card cap" />
-            <div class="card-body">
-              <h5 class="card-title">Hardwood</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="" class="btn btn-secondary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 cardrow">
-          <div class="card" >
-            <img class="card-img-top" src="./images/tiles.jpg" alt="" />
-            <div class="card-body">
-              <h5 class="card-title">Tiles</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="" class="btn btn-secondary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Row>
+        <Col md={6} class="cardrow">
+          <Thumbnail src="./images/woodfloor.jpg" alt="Card cap">
+            <h3 class="card-title">Hardwood</h3>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="" ><Button>Go somewhere</Button></a>
+          </Thumbnail>
+        </Col>
+        <Col md={6} class="cardrow">
+          <Thumbnail src="./images/tiles.jpg" alt="" >
+            <h3 class="card-title">Tiles</h3>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="" ><Button>Go somewhere</Button></a>
+          </Thumbnail>
+        </Col>
+      </Row>
 
-      <div class="row">
-        <div class="col-md-6 cardrow">
-          <div class="card" >
-            <img class="card-img-top" src="./images/laminate.jpg" alt="" />
-            <div class="card-body">
-              <h5 class="card-title">Laminate</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="" class="btn btn-secondary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 cardrow">
+      <Row>
+        <Col md={6} class="cardrow">
+          <Thumbnail src="./images/laminate.jpg" alt="">
+            <h3 class="card-title">Laminate</h3>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="" ><Button>Go somewhere</Button></a>
+          </Thumbnail>
+        </Col>
+        <Col xs={12} md={6} class="cardrow">
           <div class="card" >
             <div class="card-body">
-              <h4 class="btn btn-dark btn-lg">Contact Us</h4>
+              <h3>Contact Us</h3>
         <hr />
               <form method="POST" action="https://formspree.io/jbfloorinc@gmail.com">
-                <h5>Name</h5>
+                <h4>Name</h4>
                 <input id="name" type="name" name="name" placeholder="John Smith" />
                 <br />
-                <h5>Email</h5>
+                <h4>Email</h4>
                 <input id="email" type="email" name="email" placeholder="example@gmail.com" />
                 <br />
-                <h5>Text</h5>
+                <h4>Text</h4>
                 <textarea id="textarea" name="message" placeholder="Your message"></textarea>
                 <br /><br />
-                <button class="btn btn-secondary" type="submit">Send</button>
+                <Button bsStyle="primary" type="submit">Send</Button>
               </form>
             </div>
           </div>
-        </div>
-      </div>
+        </Col>
+      </Row>
   <br />
-      <div class="row">
-        <div class="col-md-12">
-          <h2>More Photoe</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card" >
-            <a href=""><img class="card-img-top" src="./images/laminate.jpg" alt="" /></a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card" >
-            <a href=""><img class="card-img-top" src="./images/laminate.jpg" alt="" /></a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card" >
-            <a href=""><img class="card-img-top" src="./images/laminate.jpg" alt="" /></a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card" >
-            <a href=""><img class="card-img-top" src="./images/laminate.jpg" alt="" /></a>
-          </div>
-        </div>
-      </div>
+      <Row>
+        <Col md={12}>
+          <h2>More Photo</h2>
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={6} md={3}>
+          <a href=""><Image rounded responsive src="./images/laminate.jpg" alt="" /></a>
+        </Col>
+        <Col xs={6} md={3}>
+          <a href=""><Image rounded responsive src="./images/laminate.jpg" alt="" /></a>
+        </Col>
+        <Col xs={6} md={3}>
+          <a href=""><Image rounded responsive src="./images/laminate.jpg" alt="" /></a>
+        </Col>
+        <Col xs={6} md={3}>
+          <a href=""><Image rounded responsive src="./images/laminate.jpg" alt="" /></a>
+        </Col>
+      </Row>
   <br />
-      <div class="row">
-        <div class="col-md-12">
-          <div class="jumbotron bg-dark">
+      <Row>
+        <Col md={12}>
+          <Jumbotron className="bg-dark">
             <h1 class="display-4">Photo Gallery</h1>
             <p class="lead">Check out more of our pictures in photo Gallery!</p>
             <hr class="my-4" />
@@ -103,11 +87,11 @@ const home = () => {
             <p class="lead">
               <a class="btn btn-secondary btn-lg" href="" role="button">Go to Gallery</a>
             </p>
-          </div>
-        </div>
-      </div>
+          </Jumbotron>
+        </Col>
+      </Row>
 
-    </div>
+    </Grid>
   );
 }
 
